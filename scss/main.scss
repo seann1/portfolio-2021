@@ -326,3 +326,53 @@ section {
     z-index: 5;
   }
 }
+
+.hire-me-container {
+  display: flex;
+  justify-content: flex-start;
+  //flex-basis: 20%;
+  //align-items: flex-start;
+  //padding-left: 2em;
+
+  @media only screen and (max-width: 580px) {
+    flex-direction: column;
+  }
+}
+
+.box-1 {
+  //flex: 1;
+  //order: 1;
+  width: 16%;
+  margin-bottom: 1em;
+  //float: left;
+  @media only screen and (max-width: 580px) {
+    margin-bottom: 0px;
+  }
+}
+
+.box-2 {
+  //flex: 1;
+  //order: 2;
+  width: 7%;
+  //margin-bottom: 2em;
+  //justify-content: flex-start;
+  //float: left;
+}
+.box-3 {
+  width: 60%;
+}
+
+.linkedIn {
+  height: 5em;
+  filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%)
+    contrast(97%);
+}
+
+.email {
+  padding-top: 0.6em;
+  height: 60px;
+  align-self: flex-start;
+  filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%)
+    contrast(97%);
+  //margin-right: auto;
+}
