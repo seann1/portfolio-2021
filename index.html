@@ -13,29 +13,35 @@
         <a href="index.html" class="logo">Sean Niesen</a>
         <nav>
           <ul>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">My Skills</a></li>
-            <li><a href="#">Hire Me</a></li>
+            <li><a href="#myWork">My Work</a></li>
+            <li><a href="#mySkills">My Skills</a></li>
+            <li><a href="#hireMe">Hire Me</a></li>
           </ul>
         </nav>
       </header>
       <div class="social-header">
         <ul>
           <li>
-            <a href="#"><img src="images/github.svg" alt="Github" /></a>
+            <a href="https://github.com/seann1" target="_blank"
+              ><img src="images/github.svg" alt="Github"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+            <a href="https://www.instagram.com/seanniesen/" target="_blank"
+              ><img src="images/instagram.svg" alt="Instagram"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+            <a href="https://twitter.com/seanniesen" target="_blank"
+              ><img src="images/twitter.svg" alt="Twitter"
+            /></a>
           </li>
         </ul>
       </div>
     </div>
     <div class="hero">
       <div class="content">
-        <h1 class="stagger1">Driven and Motivated Web Developer</h1>
+        <h1 class="stagger1">Frontend Web Developer</h1>
         <div class="meet stagger1">
           <span>👇</span>
           <p>Meet Sean Niesen</p>
@@ -182,7 +188,7 @@
       </svg>
     </div>
     <section class="featured">
-      <div class="left">
+      <div class="left" id="myWork">
         <div class="inner trransition2">
           <p class="subtitle">Featured Project</p>
           <a href="#" class="featured-title">ReactMeals</a>
@@ -196,29 +202,33 @@
       />
     </section>
 
-    <section class="skills">
+    <section class="skills" id="mySkills">
       <div class="skills-container">
         <ul>
           <li class="transition2">
             <div class="icon-container one">
-              <img src="images/icon-ux.svg" alt="UI/UX Icon" />
+              <img src="images/JavaScript_logo.svg" alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">UI UX Design</p>
-            <p class="featured-desc skill-desc">asdfadsfasdfadfadsf</p>
+            <p class="skill-title">JavaScript</p>
+            <!-- <p class="featured-desc skill-desc">
+              Solid understanding of JavaScript, APIs, Databases, and frameworks
+            </p> -->
           </li>
           <li class="transition2">
             <div class="icon-container two">
-              <img src="images/icon-frontend.svg" alt="UI/UX Icon" />
+              <img src="images/React-icon.svg" alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">Frontend Development</p>
-            <p class="featured-desc skill-desc">asdfadsfasdfadfadsf</p>
+            <p class="skill-title">React</p>
+            <!-- <p class="featured-desc skill-desc">
+              Modern, declarative, component-based framework
+            </p> -->
           </li>
           <li class="transition2">
             <div class="icon-container three">
-              <img src="images/icon-logo.svg" alt="UI/UX Icon" />
+              <img src="images/css-3/icon-css-3.svg" alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">Identity Design</p>
-            <p class="featured-desc skill-desc">asdfadsfasdfadfadsf</p>
+            <p class="skill-title">CSS</p>
+            <!-- <p class="featured-desc skill-desc">asdfadsfasdfadfadsf</p> -->
           </li>
         </ul>
       </div>
@@ -249,6 +259,31 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
+      // Define selector for selecting
+      // anchor links with the hash
+      let anchorSelector = 'a[href^="#"]';
+
+      // Collect all such anchor links
+      let anchorList = document.querySelectorAll(anchorSelector);
+
+      // Iterate through each of the links
+      anchorList.forEach((link) => {
+        link.onclick = function (e) {
+          // Prevent scrolling if the
+          // hash value is blank
+          e.preventDefault();
+
+          // Get the destination to scroll to
+          // using the hash property
+          let destination = document.querySelector(this.hash);
+
+          // Scroll to the destination using
+          // scrollIntoView method
+          destination.scrollIntoView({
+            behavior: "smooth",
+          });
+        };
+      });
       gsap.registerPlugin(ScrollTrigger);
       let tl = gsap.timeline();
       tl.from(".content", {
@@ -305,5 +340,6 @@
         stagger: 0.3,
       });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
 </html>
