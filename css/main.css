@@ -61,7 +61,7 @@ header ul a {
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
-  color: #ff64cb;
+  color: #cacaca;
 }
 .meet span {
   margin-top: 1em;
@@ -119,7 +119,7 @@ section {
 }
 
 .skills {
-  background: #ff64cb;
+  background: #cacaca;
 }
 
 .skills-container ul li {

@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
+//original main color: #6700ee
+// original accent color: #ff64cb
+$main-color: #6700ee;
+$accent-color: #cacaca;
+
 body {
   height: 100vh;
   margin: 0;
@@ -21,7 +26,7 @@ img {
 }
 
 .nav-container {
-  background: #6700ee;
+  background: $main-color;
   a {
     color: white;
   }
@@ -65,7 +70,7 @@ header {
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
-  color: #ff64cb;
+  color: $accent-color;
 
   span {
     margin-top: 1em;
@@ -124,7 +129,7 @@ section {
 }
 
 .skills {
-  background: #ff64cb;
+  background: $accent-color;
 }
 
 .skills-container ul li {
@@ -220,7 +225,7 @@ section {
     background: unset;
 
     header {
-      background: #6700ee;
+      background: $main-color;
     }
   }
   header {
