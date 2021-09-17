@@ -327,11 +327,6 @@ section {
   display: flex;
   justify-content: flex-start;
 }
-@media only screen and (max-width: 580px) {
-  .hire-me-container {
-    flex-direction: column;
-  }
-}
 
 .box-1 {
   width: 16%;
@@ -353,12 +348,10 @@ section {
 
 .linkedIn {
   height: 5em;
-  filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%) contrast(97%);
 }
 
 .email {
   padding-top: 0.6em;
   height: 60px;
   align-self: flex-start;
-  filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%) contrast(97%);
 }

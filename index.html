@@ -245,6 +245,17 @@
         </div>
         <a href="#"><img src="./images/fretty.jpg" alt="Fretastic" /></a>
       </div>
+
+      <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">guitar app</p>
+            <div class="featured-title">Fretastic.com</div>
+            <div class="featured-desc">asdfasdfadfasdasdfadf</div>
+          </div>
+        </div>
+        <a href="#"><img src="./images/fretty.jpg" alt="Fretastic" /></a>
+      </div>
     </section>
     <div class="hire-me-container" id="hireMe">
       <div class="box-1">
@@ -346,6 +357,26 @@
       gsap.from(".transition3", {
         scrollTrigger: {
           trigger: ".transition3",
+          start: "top bottom",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.3,
+      });
+      gsap.from(".box-1", {
+        scrollTrigger: {
+          trigger: ".box-1",
+          start: "top bottom",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.3,
+      });
+      gsap.from(".box-2", {
+        scrollTrigger: {
+          trigger: ".box-2",
           start: "top bottom",
         },
         y: 50,

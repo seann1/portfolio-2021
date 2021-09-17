@@ -334,9 +334,9 @@ section {
   //align-items: flex-start;
   //padding-left: 2em;
 
-  @media only screen and (max-width: 580px) {
-    flex-direction: column;
-  }
+  // @media only screen and (max-width: 580px) {
+  //   flex-direction: column;
+  // }
 }
 
 .box-1 {
@@ -364,15 +364,15 @@ section {
 
 .linkedIn {
   height: 5em;
-  filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%)
-    contrast(97%);
+  //filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%)
+  //contrast(97%);
 }
 
 .email {
   padding-top: 0.6em;
   height: 60px;
   align-self: flex-start;
-  filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%)
-    contrast(97%);
+  //filter: invert(93%) sepia(0%) saturate(14%) hue-rotate(39deg) brightness(97%)
+  //contrast(97%);
   //margin-right: auto;
 }
