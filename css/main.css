@@ -355,3 +355,7 @@ section {
   height: 60px;
   align-self: flex-start;
 }
+
+.image-radius {
+  border-radius: 1em;
+}
