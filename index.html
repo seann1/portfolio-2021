@@ -297,6 +297,11 @@
           ><img src="images/email.svg" alt="Email" class="email"
         /></a>
       </div>
+      <div class="box-3">
+        <a href="./images/Resume.pdf" target="_blank"
+          ><p class="resume">Resume</p></a
+        >
+      </div>
       <!-- <div class="box-3"></div> -->
     </div>
 
@@ -406,6 +411,16 @@
       gsap.from(".box-2", {
         scrollTrigger: {
           trigger: ".box-2",
+          start: "top bottom",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.3,
+      });
+      gsap.from(".box-3", {
+        scrollTrigger: {
+          trigger: ".box-3",
           start: "top bottom",
         },
         y: 50,

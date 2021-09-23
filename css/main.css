@@ -359,3 +359,10 @@ section {
 .image-radius {
   border-radius: 1em;
 }
+
+.resume {
+  font-size: 2em;
+  text-decoration: none;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
